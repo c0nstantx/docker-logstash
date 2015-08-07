@@ -17,6 +17,7 @@ RUN \
   apt-get install -y supervisor
 
 ADD ./supervisor_logstash.conf /etc/supervisor/conf.d/supervisor_logstash.conf
+ADD ./logstash.conf /config-dir/logstash.conf
 
 ADD ./start.sh /start.sh
 RUN chmod a+x /start.sh
