@@ -1,0 +1,2 @@
+MONOLOG_TIMESTAMP %{YEAR}-%{MONTHNUM}-%{MONTHDAY}[ ]%{HOUR}:%{MINUTE}:%{SECOND}
+MONOLOG \[%{MONOLOG_TIMESTAMP:timestamp}\][ ]%{WORD:action}\.%{WORD:status}[: ]%{GREEDYDATA:log_message}
