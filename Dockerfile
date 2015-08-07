@@ -22,4 +22,4 @@ ADD ./logstash.conf /config-dir/logstash.conf
 ADD ./start.sh /start.sh
 RUN chmod a+x /start.sh
 
-ENTRYPOINT ["/start.sh"]
+CMD ["/start.sh"]
